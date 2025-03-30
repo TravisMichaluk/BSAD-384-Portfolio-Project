@@ -47,13 +47,71 @@ Data freshness: Price and inflation data must be updated regularly to remain acc
 * [Populate Script (DML)](populate.sql)
 
 ### Query 1
-List of Customers and their Purchased Items with Total Quantity
-
+'''
+SELECT 
+    P.ProvCode, 
+    AVG(C.IncomeLevel) AS AvgIncome
+FROM 
+    Province P
+JOIN 
+    Customer C ON P.ProvCode = C.ProvCode
+GROUP BY 
+    P.ProvCode
+ORDER BY 
+    AvgIncome DESC;
+'''
 
 ### Query 2
-
+SELECT 
+    F.Name AS ItemName, 
+    R.RetName AS RetailerName, 
+    R.RetLocation
+FROM 
+    FoodItem F
+JOIN 
+    Retailers R ON F.RetailerID = R.RetailerID
+ORDER BY 
+    F.Name;
 ### Query 3
-
+SELECT 
+    C.Fname, 
+    C.Lname, 
+    G.ProgName AS SupportProgram
+FROM 
+    Customer C
+JOIN 
+    MayQualifyFor MQF ON C.CustomerID = MQF.CustomerID
+JOIN 
+    GovSupportProgram G ON MQF.ProgName = G.ProgName
+WHERE 
+    C.IncomeLevel < 60000  
+ORDER BY 
+    C.Lname, C.Fname;
 ### Query 4
 
+List of Customers and their Purchased Items with Total Quantity
+
+SELECT 
+    C.Fname, 
+    C.Lname, 
+    F.Name AS ItemName, 
+    CI.Quantity
+FROM 
+    CartItems CI
+JOIN 
+    Customer C ON CI.CustomerId = C.CustomerID
+JOIN 
+    FoodItem F ON CI.ItemID = F.ItemID
+ORDER BY 
+    C.Lname, C.Fname;
+
 ### Query 5
+SELECT 
+    G.ProgName, 
+    SUM(G.BenefitAmount) AS TotalBenefits
+FROM 
+    GovSupportProgram G
+GROUP BY 
+    G.ProgName
+ORDER BY 
+    TotalBenefits DESC;
