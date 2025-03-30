@@ -47,7 +47,7 @@ Data freshness: Price and inflation data must be updated regularly to remain acc
 * [Populate Script (DML)](populate.sql)
 
 ### Query 1
-'''
+```
 SELECT 
     P.ProvCode, 
     AVG(C.IncomeLevel) AS AvgIncome
@@ -59,9 +59,11 @@ GROUP BY
     P.ProvCode
 ORDER BY 
     AvgIncome DESC;
-'''
+```
 
 ### Query 2
+
+```
 SELECT 
     F.Name AS ItemName, 
     R.RetName AS RetailerName, 
@@ -72,7 +74,11 @@ JOIN
     Retailers R ON F.RetailerID = R.RetailerID
 ORDER BY 
     F.Name;
+```
+
 ### Query 3
+
+```
 SELECT 
     C.Fname, 
     C.Lname, 
@@ -87,7 +93,13 @@ WHERE
     C.IncomeLevel < 60000  
 ORDER BY 
     C.Lname, C.Fname;
+```
+
+
 ### Query 4
+
+
+```
 
 List of Customers and their Purchased Items with Total Quantity
 
@@ -105,7 +117,11 @@ JOIN
 ORDER BY 
     C.Lname, C.Fname;
 
+```
+
 ### Query 5
+
+```
 SELECT 
     G.ProgName, 
     SUM(G.BenefitAmount) AS TotalBenefits
@@ -115,3 +131,4 @@ GROUP BY
     G.ProgName
 ORDER BY 
     TotalBenefits DESC;
+```
