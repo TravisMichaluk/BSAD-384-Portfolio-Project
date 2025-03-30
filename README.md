@@ -12,6 +12,8 @@ Tracking food prices from various sources.
 Comparing affordability across regions in Canada.
 Providing insights into the impact of inflation on food security.
 Simulating transaction data for user grocery purchases.
+
+
 Data Sources:
 Canada Open Data Portal (StatsCan): Food price index, inflation reports
 Simulated Transaction Data
@@ -21,6 +23,7 @@ All users belong to a specific region that impacts affordability.
 Food price data is either sourced from open datasets or simulated for consistency.
 Inflation rates and affordability metrics vary by province/region.
 Government programs help offset food insecurity, affecting purchasing behavior.
+
 Constraints:
 Data availability: Some real-time food price APIs may be unavailable or restricted.
 Privacy considerations: User income levels and purchasing behavior need anonymization.
