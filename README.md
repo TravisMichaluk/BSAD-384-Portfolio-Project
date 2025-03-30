@@ -46,3 +46,14 @@ Data freshness: Price and inflation data must be updated regularly to remain acc
 * [Query Script (SQL)](Query.sql)
 * [Populate Script (DML)](populate.sql)
 
+### Query 1
+List of Customers and their Purchased Items with Total Quantity
+
+
+### Query 2
+
+### Query 3
+
+### Query 4
+
+### Query 5
