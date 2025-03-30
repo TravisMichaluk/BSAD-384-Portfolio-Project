@@ -37,6 +37,7 @@ Data freshness: Price and inflation data must be updated regularly to remain acc
 
 ## Relational Model
 
+<img width="509" alt="image" src="https://github.com/user-attachments/assets/dd41d54b-7875-47f3-9552-517ba5265cd4" />
 
 
 ## Source Code
