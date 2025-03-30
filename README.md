@@ -42,7 +42,7 @@ Data freshness: Price and inflation data must be updated regularly to remain acc
 
 ## Source Code
 
-
+* [Create Script (DDL](create.sql)
 * [Query Script (SQL)](Query.sql)
 * [Populate Script (DML)](populate.sql)
 
