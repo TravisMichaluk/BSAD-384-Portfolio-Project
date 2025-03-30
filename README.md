@@ -48,6 +48,7 @@ Data freshness: Price and inflation data must be updated regularly to remain acc
 
 ### Query 1
 ```
+Average Income of Customers by Province
 SELECT 
     P.ProvCode, 
     AVG(C.IncomeLevel) AS AvgIncome
@@ -64,6 +65,7 @@ ORDER BY
 ### Query 2
 
 ```
+Food Items and Their Retailer Locations
 SELECT 
     F.Name AS ItemName, 
     R.RetName AS RetailerName, 
@@ -79,6 +81,7 @@ ORDER BY
 ### Query 3
 
 ```
+List of Customers and Their Eligibility for Support Programs Based on Income Level
 SELECT 
     C.Fname, 
     C.Lname, 
@@ -121,7 +124,9 @@ ORDER BY
 
 ### Query 5
 
+
 ```
+Total Benefit Amount for Support Programs Based on Criteria
 SELECT 
     G.ProgName, 
     SUM(G.BenefitAmount) AS TotalBenefits
