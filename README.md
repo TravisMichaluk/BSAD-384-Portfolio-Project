@@ -29,6 +29,19 @@ Data availability: Some real-time food price APIs may be unavailable or restrict
 Privacy considerations: User income levels and purchasing behavior need anonymization.
 Data freshness: Price and inflation data must be updated regularly to remain accurate.
 
-ER Model:
+
+
+## Entity Relational Model
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/f9f62687-19c3-4243-9f0e-2fb7bccf3f6d" />
+
+## Relational Model
+
+![Relational model of the city police department](RelationalSchema.png)
+
+## Source Code
+
+
+* [Query Script (SQL) (Query.sql)
+* [Populate Script (DML)](populate.sql)
+
