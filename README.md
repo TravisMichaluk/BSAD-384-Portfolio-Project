@@ -25,4 +25,4 @@ Constraints:
 Data availability: Some real-time food price APIs may be unavailable or restricted.
 Privacy considerations: User income levels and purchasing behavior need anonymization.
 Data freshness: Price and inflation data must be updated regularly to remain accurate.
-![image](https://github.com/user-attachments/assets/64beb7d6-3c30-4590-ba1f-c935261572e7)
+
