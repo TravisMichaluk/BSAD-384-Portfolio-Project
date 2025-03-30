@@ -37,11 +37,11 @@ Data freshness: Price and inflation data must be updated regularly to remain acc
 
 ## Relational Model
 
-![Relational model of the city police department](RelationalSchema.png)
+
 
 ## Source Code
 
 
-* [Query Script (SQL) (Query.sql)
+* [Query Script (SQL)] (Query.sql)
 * [Populate Script (DML)](populate.sql)
 
