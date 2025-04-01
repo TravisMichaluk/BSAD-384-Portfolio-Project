@@ -33,11 +33,11 @@ Data freshness: Price and inflation data must be updated regularly to remain acc
 
 ## Entity Relational Model
 
-![ER Model](ER_Model.png)
+![ER Model](ER_Model_Revised.png)
 
 ## Relational Model
 
-![Relational model](Relational_Schema.png)
+![Relational model](Relational_Schema_Revised.png)
 
 
 ## Source Code
